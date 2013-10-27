@@ -1,0 +1,21 @@
+[program:django]
+# Supervisor can't prepend to $PATH
+environment=PATH='/home/vagrant/.virtualenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:'
+directory=/vagrant/django
+command=python manage.py runserver 0.0.0.0:8080
+
+stdout_logfile=/vagrant/logs/django.log
+stderr_logfile=/vagrant/logs/django.log
+
+user=vagrant
+
+autostart=true
+autorestart=true
+
+# Supervisor doesn't stop django otherwise. See https://coderwall.com/p/4tcw7w
+stopsignal=KILL
+stopasgroup=true
+killasgroup=true
+
+# Lower priority starts first.
+priority=1
