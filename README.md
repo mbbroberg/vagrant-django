@@ -3,7 +3,7 @@
 Main wordpress website [http://revolvemagazine.dk](http://revolvemagazine.dk).
 
 ## Getting started:
- 
+
 ### Requirements
 Make sure you have the following software installed before proceding:
 
@@ -16,7 +16,7 @@ Make sure you have the following software installed before proceding:
 First you need to set up git following [this](https://help.github.com/articles/set-up-git#platform-linux) tutorial and then you need to have a SSH key generated and added to your GitHub account, just follow [this](https://help.github.com/articles/generating-ssh-keys#platform-linux) tutorial.
 When done just enter the following commands:
 
-    $ git clone git@github.com:revolve-dk/revolvemagazine.dk.git
+    $ git clone git@github.com:revolve-dk/revolve.dk.git
     $ ssh-add ~/.ssh/id_rsa
     $ vagrant up
 
