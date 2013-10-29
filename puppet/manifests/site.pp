@@ -28,7 +28,7 @@ node 'django' {
         group  => 'root',
         owner  => 'root',
     }
-    service { 'supervisor-django':
+    service { 'supervisor':
       ensure    => running,
       enable    => true,
       subscribe => File['/etc/supervisor/conf.d/django.conf'],
