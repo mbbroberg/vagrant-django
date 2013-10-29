@@ -1,4 +1,4 @@
-node django {
+node 'django' {
     require webserver
     # hosts {}
 
@@ -27,6 +27,11 @@ node django {
         content => template("/vagrant/puppet/templates/supervisor.django.erb"),
         group  => 'root',
         owner  => 'root',
+    }
+    service { 'supervisor-django':
+      ensure    => running,
+      enable    => true,
+      subscribe => File['/etc/supervisor/conf.d/django.conf'],
     }
 }
 

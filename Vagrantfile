@@ -9,7 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/raring/current/raring-server-cloudimg-amd64-vagrant-disk1.box"
     config.vm.network :forwarded_port, guest: 8080, host: 8080
     config.ssh.forward_agent = true
-    config.vm.hostname = "django"
+    config.vm.hostname = "django.local"
     config.vm.provider :virtualbox do |vb|
         vb.gui = false
         vb.customize ["modifyvm", :id, "--memory", "512"]

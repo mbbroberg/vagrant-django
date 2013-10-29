@@ -178,11 +178,13 @@ PIPELINE_JS = {
 ENV = os.environ.get('ENV', None)
 
 if ENV == 'development' or ENV == None:
-    IS_PRODUCTION = True
+    IS_DEVELOPMENT = True
     from configs.dev import *
 
 elif ENV == 'profiling':
-    pass
+    IS_PROFILING = True
+    from configs.prof import *
 
 elif ENV == 'production':
-    PIPELINE_ENABLED = True
+    IS_PRODUCTION = True
+    from configs.prof import *

@@ -18,6 +18,7 @@ When done just enter the following commands:
 
     $ git clone git@github.com:revolve-dk/revolve.dk.git
     $ ssh-add ~/.ssh/id_rsa
+    $ cd revolve.dk
     $ vagrant up
 
 The first time it will take some time (15-30 min.), when done you can go to [http://localhost:8080](http://localhost:8080) and the application should come up.
