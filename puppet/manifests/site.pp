@@ -37,7 +37,6 @@ node 'django' {
 
 class webserver {
     require stdlib
-    require puppet-python
     class { 'apt':
         always_apt_update    => true,
         # disable_keys         => undef,
