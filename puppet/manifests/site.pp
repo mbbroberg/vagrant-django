@@ -36,6 +36,7 @@ node 'django' {
 }
 
 class webserver {
+    include stdlib
     class { 'apt':
         always_apt_update    => true,
         # disable_keys         => undef,
