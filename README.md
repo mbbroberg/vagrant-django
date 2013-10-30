@@ -30,7 +30,7 @@ The first time it will take some time (15-30 min.), when done you can go to [htt
 
 * __configs__: Contains different configuration files for services needed to run Django.
 * __django__: This is the folder that you are interested in, it contains the Django project and files.
-* __logs__: Contains all logs, including Django.
+* __logs__: Contains all log files, including logs for Django.
 * __puppet__: Contains [puppet](http://puppetlabs.com/) manifest and module files which are used to install needed packages and set-up the virtual machine to be ready for developement.
 * __scripts__: Folder containing [bash](http://stackoverflow.com/questions/2872041/is-there-any-use-for-bash-scripting-anymore) or python scripts used to automate different tasks.
 * __.gitattributes__: Ensure consistent git settings across machines, right now used to deal with those pesky [new line endings](http://en.wikipedia.org/wiki/Newline#Representations) differences.
