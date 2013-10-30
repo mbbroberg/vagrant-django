@@ -24,3 +24,16 @@ When done just enter the following commands:
 The first time it will take some time (15-30 min.), when done you can go to [http://localhost:8080](http://localhost:8080) and the application should come up.
 
 #### Windows instuctions
+
+
+## Project structure
+
+* configs: Contains different configuration files for services needed to run Django.
+* django: This is the folder that you are interested in, it contains the Django project and files.
+* logs: Contains all logs, including Django.
+* puppet: Contains [puppet](http://puppetlabs.com/) manifest and module files which are used to install needed packages and set-up the virtual machine to be ready for developement.
+* scripts: Folder containing [bash](http://stackoverflow.com/questions/2872041/is-there-any-use-for-bash-scripting-anymore) or python scripts used to automate different tasks.
+* .gitattributes: Ensure consistent git settings across machines, right now used to deal with those pesky [new line endings](http://en.wikipedia.org/wiki/Newline#Representations) differences.
+* .gitignore: Files to be [ignored](https://help.github.com/articles/ignoring-files) by git and not added to the repository.
+* README.md: You are reading it now :) . For more info read about [Markdown](http://en.wikipedia.org/wiki/Markdown).
+* Vagrantfile: [Vagrant configuration file](http://docs.vagrantup.com/v2/vagrantfile/), it is used to create and bring the virtual machine up, configure networking for it and further kick-off puppet.
